@@ -1,0 +1,430 @@
+/* index.html */
+
+body {
+  overflow-x: hidden;
+}
+
+/***************************************************/
+/* Background title */
+
+.background-container {
+/*  background-image: url("index-image1111 c shrink.jpg");*/
+background-image: url("index-image1113 s.jpg"); 
+ 
+background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/*apply below 1024px - tablet and mobile
+@media (max-width: 500px) {
+   .background-container {
+     background-image: url("background-smartphone_Wondershare 9-16.jpg");
+     height: 86vh;
+     width: 100vw;
+     overflow: hidden;
+   }
+ }*/
+
+
+/* media query for background size */
+@media (max-height: 750px) {
+  .background-container {
+    height: 86vh;
+  }
+}
+
+
+/****************************************************/
+/*  Navigation Bar */
+
+.navbar {
+  height: 3rem;
+  font-size: 1.25rem;
+  transition: all;
+  -webkit-transition: all;
+  -moz-transition: all;
+  -ms-transition: all;
+  -o-transition: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  align-content: center;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.navbar .container-fluid .offcanvas {
+  background-color: #171717;
+}
+
+.navbar .container-fluid .offcanvas .offcanvas-body {
+  gap: 25px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+
+.home-icon {
+  font-size: 150%;
+  color: white;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-timing-function: linear;
+  transition-duration: 0.25s;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  height: auto;
+  width: auto;
+}
+.home-icon:hover {
+  color: #FFD743;
+}
+
+.navbar .container-fluid button {
+  background-color: white;
+}
+
+.navbar .container-fluid .navbar-brand {
+  height: auto;
+  width: auto;
+}
+
+.brand {
+  height: 2rem;
+  width: 2rem;
+}
+
+.navbar .container-fluid .offcanvas .offcanvas-header .offcanvas-brand-container {
+  height: auto;
+  width: auto;
+}
+
+/* set color for nav-items */
+nav .navbar-nav .nav-item .nav-link{
+  transition-property: all;
+  transition-duration: 0.25s;
+  font-family: 'Open Sans', sans-serif;
+  /*font-size: 1.5em;*/
+  color: white;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover {
+  color: #FFD743;
+}
+
+.navbar .container-fluid .icons-nav {
+  width: auto;
+  height: 100%;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.icon {
+  width: auto;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.icon:hover {
+  color: #FFD743 !important;
+}
+
+.icons-canvas {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.icon-canvas {
+  color: white;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-delay: 0;
+  transition-timing-function: linear;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.icon-canvas:hover {
+  color: #FFD743;
+}
+/* remove the border from the navbar button when pressed */
+.navbar .container-fluid .navbar-toggler {
+  border: none;
+  background-color: transparent;
+
+}
+
+.navbar .container-fluid .navbar-toggler .bar-icon {
+  font-size: 110%;
+  border: none;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-timing-function: linear;
+}
+
+/* remove border from the navbar-toggler */
+.navbar .container-fluid .navbar-toggler:active,
+.navbar .container-fluid .navbar-toggler:focus,
+.navbar .container-fluid .navbar-toggler .bar-icon:active,
+.navbar .container-fluid .navbar-toggler .bar-icon {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar .container-fluid .offcanvas .offcanvas-header .x-mark {
+  color: white;
+  font-size: 110%;
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 991px) {
+  .navbar .container-fluid .icons-nav {
+    display: none;
+  }
+}
+
+/*******************************************************/
+/* About Section */
+#about-section {
+  width: 100%;
+  text-align: right;
+}
+
+#about-section .container {
+  padding: 7% 0;
+  margin-right: 15%;
+}
+
+#about-section .container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#about-section .container p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #about-section .container {
+    margin-right: 1%;
+  }
+}
+
+/******************************************************/
+/* Vocal Section */
+#vocal-section {
+  width: 100%;
+  text-align: right;
+  /* background-color: #C0C9CC; */
+  background-color: #DBDDD0;
+}
+
+#vocal-section .container {
+  padding: 7% 0;
+  margin-right: 15%;
+}
+
+#vocal-section .container {
+  margin-right: 15%;
+}
+
+#vocal-section .container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#vocal-section .container h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: grey;
+}
+
+#vocal-section .container p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #vocal-section .container {
+    margin-right: 1%;
+  }
+}
+
+/******************************************************/
+/* Video Section */
+/* 
+#video-section .container {
+  text-align: center;
+  padding: 7% 0;
+}
+
+#video-section .container h1 {
+  padding-bottom: 2.5%;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+
+@media (max-width: 600px) {
+  .video {
+    height: auto;
+    width: 80%;
+  }
+} */
+/********************************************************/
+/* Music Section */
+#music-section {
+  width: 100%;
+  text-align: center;
+  background-color: #A5ABA0;
+}
+
+#music-section .container {
+  text-align: center;
+  padding: 7% 0;
+}
+
+#music-section .container h1 {
+  padding-bottom: 2.5%;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 990px) {
+  .video {
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .video {
+    height: auto;
+    width: 80%;
+  }
+}
+
+
+/********************************************************/
+/* copyright - the footer of the page */
+/* .copyright {
+  position: relative;
+  bottom: 0;
+  padding-bottom: 11.5em;
+  padding-top: 2em;
+  text-align: center;
+  font-size: 1em;
+  height: auto;
+  width: 100%;
+  background-color: #171717;
+  background-size: 100%;
+} */
+
+.copyright {
+  bottom: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  height: auto;
+  width: 100vw;
+  background-color: #171717;
+  background-size: 100%;
+}
+
+.rights {
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  font-size: 0.75rem;
+  color: #8A8A8A;
+}
+
+.footer-icons {
+  height: auto;
+  width: 100%;
+  bottom: 6rem;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+}
+
+.footer-icon {
+  height: auto;
+  width: auto;
+  /*transition-property: all;
+  transition-duration: 0.2s;
+  transition-delay: 0;
+  transition-timing-function: linear;*/
+  color: white;
+  border-color: #B1B1B1;
+  border-style: solid;
+  border-width: 0.2rem;
+  border: 1;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 0.45rem 0.65rem;
+
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-delay: 0;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+
+.footer-icon:hover {
+  /*color: #EDE0AA;*/
+  /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
+  /*border-color: #D2B48C;*/
+  border-color: #FFD743;
+  color: #FFD743;
+  text-shadow: 0 0 1.5px red;
+}
+
+.copyright .footer-brand-container {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.copyright .footer-brand-container .footer-brand {
+  height: auto;
+  width: 5rem;
+}
+
+footer div p {
+  width:  100%;
+  color:  grey;
+  text-align: center;
+  font-size: 0.75rem;
+}
+/*
+@media (max-width: 991px) {
+  .copyright .footer-brand-container .footer-brand {
+    margin-top: 1em;
+    width: 8.5em;
+  }
+} */
+/*****************************************/
